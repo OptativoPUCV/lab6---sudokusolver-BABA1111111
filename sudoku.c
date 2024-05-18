@@ -150,6 +150,15 @@ Node* DFS(Node* initial, int* cont){
    // Puede ver un código de ejemplo en las diapos.
    // Recuerde revisar las operaciones del TDA Stack en el archivo list.h.
 
+   Stack* stack = createStack();
+   push(stack, initial);
+   *cont = 0;
+
+   while(!is_empty(stack)){
+      Node* current = top(stack);
+      pop(stack);
+      *cont++;
+   }
    
   return NULL;
 }
