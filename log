@@ -26,3 +26,9 @@ sudoku.c:56:16: error: variable ‘j’ set but not used [-Werror=unused-but-set
 cc1: all warnings being treated as errors
 Compilation failed
 7a63616
+Sat 18 May 2024 10:24:47 PM UTC: 
+ sudoku.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+ tests:  0|5
+total_score: 0/70
+1549249
