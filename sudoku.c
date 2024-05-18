@@ -59,6 +59,7 @@ List* get_adj_nodes(Node* n){
          if (n->sudo[i][j] == 0){
             fil = i;
             col = j;
+            break;
          }
       }
    }
