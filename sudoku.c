@@ -53,8 +53,8 @@ List* get_adj_nodes(Node* n){
    List* list=createList();
    Node* sudo;
    for (int i = 0; i < 9; i++){
-      for (int k = 0; i < 9; i++){
-         sudo[i][k] = copy(n);
+      for (int j = 0; i < 9; i++){
+         sudo[i][j] = copy(n);
       }
    }
     return list;

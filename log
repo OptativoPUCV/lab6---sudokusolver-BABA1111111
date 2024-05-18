@@ -12,3 +12,17 @@ sudoku.c:56:16: error: variable ‘k’ set but not used [-Werror=unused-but-set
 cc1: all warnings being treated as errors
 Compilation failed
 cd9c535
+Sat 18 May 2024 10:18:37 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:17: error: subscripted value is neither array nor pointer nor vector
+   57 |          sudo[i][j] = copy(n);
+      |                 ^
+sudoku.c:56:16: error: variable ‘j’ set but not used [-Werror=unused-but-set-variable]
+   56 |       for (int j = 0; i < 9; i++){
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+7a63616
