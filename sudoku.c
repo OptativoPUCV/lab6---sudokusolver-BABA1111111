@@ -80,7 +80,7 @@ int is_valid(Node* n){
                   if (sub[num] == 1){
                      return 0;
                   }
-                  sub[num];
+                  sub[num] = 1;
                }
             }
          }
