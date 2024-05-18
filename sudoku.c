@@ -157,7 +157,7 @@ Node* DFS(Node* initial, int* cont){
    while(!is_empty(stack)){
       Node* current = top(stack);
       pop(stack);
-      *cont++;
+      (*cont)++;
    }
    
   return NULL;
