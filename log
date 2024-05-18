@@ -1,0 +1,14 @@
+Sat 18 May 2024 10:18:17 PM UTC: 
+ sudoku.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:17: error: subscripted value is neither array nor pointer nor vector
+   57 |          sudo[i][k] = copy(n);
+      |                 ^
+sudoku.c:56:16: error: variable ‘k’ set but not used [-Werror=unused-but-set-variable]
+   56 |       for (int k = 0; i < 9; i++){
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+cd9c535
