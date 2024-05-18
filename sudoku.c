@@ -62,6 +62,17 @@ List* get_adj_nodes(Node* n){
          }
       }
    }
+
+   if (fil == -1 && col == -1){
+      return list;
+   }
+
+   for(int num = 1; num <= 9; num++){
+      Node* newNode = copy(n);
+
+      newNode->sudo[fil][col] = num;
+   }
+
     return list;
 }
 
