@@ -69,7 +69,23 @@ int is_valid(Node* n){
          }
       }
    }
-   
+   for (int subFil = 0; subFil < 3; subFil++){
+      for (int subCol = 0; subCol < 3; subCol++){
+         int sub[10] = {0};
+
+         for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3;j++){
+               int num = n->sudo[subFil * 3 + i][subCol * 3 + j];
+               if (num != 0){
+                  if (sub[num] == 1){
+                     return 0;
+                  }
+                  sub[num] = 1;
+               }
+            }
+         }
+      }
+   }
    return 1;
 }
 
