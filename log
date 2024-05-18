@@ -90,3 +90,14 @@ Sat 18 May 2024 11:06:52 PM UTC:
  tests:  2|4
 total_score: 15/70
 e5f0fdd
+Sat 18 May 2024 11:10:26 PM UTC: 
+ sudoku.c | 84 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 42 insertions(+), 42 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:83:22: error: statement with no effect [-Werror=unused-value]
+   83 |                   sub[num];
+      |                   ~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c33daf6
