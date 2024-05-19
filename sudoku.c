@@ -162,6 +162,14 @@ Node* DFS(Node* initial, int* cont){
       if (is_final(current)){
          return current;
       }
+      List* adjNodes =  get_adj_nodes(current);
+      Node* nodeAdj;
+
+      while((nodeAdj = first(adjNodes)) !=  NULL){
+         push(stack, nodeAdj);
+         popFront(adjNodes);
+      }
+      
    }
    
   return NULL;
