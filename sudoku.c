@@ -169,7 +169,7 @@ Node* DFS(Node* initial, int* cont){
          push(stack, nodeAdj);
          popFront(adjNodes);
       }
-      
+      free(current);
    }
    
   return NULL;
